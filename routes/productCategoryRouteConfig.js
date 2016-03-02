@@ -42,6 +42,18 @@ productCategoryRouteConfig.prototype.addRoutes = function () {
     
     self.routeTable.push({
         
+        requestType : 'post',
+        requestUrl : '/createProductCategory',
+        callbackFunction : function (request, response) { 
+        
+            //we will have DAO api that knows how to persist data into mysql database
+        	
+        }
+    });
+    
+    
+    self.routeTable.push({
+        
         requestType : 'get',
         requestUrl : '/viewProductCategory',
         callbackFunction : function (request, response) { 
